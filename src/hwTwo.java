@@ -1,3 +1,5 @@
+// Output will be two
+
 public class hwTwo {
     public static void main(String[] args) {
         double[] exampleArray = {1,5,6,5,4,1};

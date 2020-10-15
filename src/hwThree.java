@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class hwThree {
@@ -13,11 +14,14 @@ public class hwThree {
             System.out.println("What power will you raise your list items to? (1-10)");
             int power = s.nextInt();
 
-            ArrayList<Double> myList = new ArrayList<Double>(size);
+            double[] myList = new double[size];
 
             for (int i = 0; i < size; i++) {
-                System.out.println(Math.pow(i, power));
+                double result = Math.pow(i, power);
+                myList[i] = result;
             } 
+
+            System.out.println(Arrays.toString(myList));
        
         }
     }
